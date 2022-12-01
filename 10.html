@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>atv 10 silvio</title>
+    <title>atividade10</title>
+
 </head>
+<h1>Conversor</h1>
+    <p>Preco: <span id="preco"></span></p>
+    <p>impostos <span id="impostos"></span></p>
+    <p>distribuidor <span id="distribuidor"></span></p>
+    <p>total: <span id="total"></span></p>
+
 <body>
-    <h1>atividade 10</h1>
-    <p>Produto: <span id="produto"></span></p>
-    <p>total: <span id="precoFinal"></span></p>
-
     <script>
-        let produto = prompt("Digite do nome do produto");
-        let precoFabrica = Number(prompt("Digite o preço de Fábrica"));
-        let imposto = Number(prompt("Digite a porcentagem do imposto"));
-        let taxa = Number(prompt("Digite a porcentagem da taxa do distribuidor"));
-        let precoFinal = (precoFabrica - (precoFabrica *((taxa + imposto) / 100)));
+    let preco = Number (prompt("Digite o preço do produto."));
+    let impostos = Number(prompt("Digite a porcentagem de impostos"));
+    let distribuidor = Number (prompt("Digite a porcentagem do distribuidor"));
+    let porcentagem = preco / 100 ; 
+    
+     total = (preco + (preco *(impostos + distribuidor) / 100));
 
-        document.getElementById("produto").innerHTML=produto;
-        document.getElementById("precoFinal").innerHTML=precoFinal.toFixed(2);
+    document.getElementById("total").innerHTML=total;
+      document.getElementById("preco").innerHTML=preco;
+      document.getElementById("impostos").innerHTML=impostos;
+      document.getElementById("distribuidor").innerHTML=distribuidor;
+      document.getElementById("porcentagem").innerHTML=porcentagem;
+   
     </script>
 </body>
 </html>
