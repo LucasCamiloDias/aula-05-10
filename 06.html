@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript06 </title>
+</head>
+<body>
+
+ <h1>Calculo total vendas</h1>
+    <p>Nome da loja: <span id=nome></span></p> 
+    <p>Primeiro semestre: <span id=primeirosemestre></span></p>
+<p>Segundo semestre: <span id=segundosemestre></span></p>
+<p>O ganho total é: <span id="total"></span></p>
+
+<script>
+let nome= (prompt("Digite o nome da loja:"));
+let janeiro= Number(prompt("Digite os ganhos do mês de janeiro:"));
+let fevereiro= Number(prompt("Digite os ganhos do mês de fevereiro:"));
+let marco= Number(prompt("Digite os ganhos do mês de março:"));
+let abril= Number(prompt("Digite os ganhos do mês de abril:"));
+let maio= Number(prompt("Digite os ganhos do mês de maio:"));
+let junho= Number(prompt("Digite os ganhos do mês de junho:"));
+let julho= Number(prompt("Digite os ganhos do mês de julho:"));
+let agosto= Number(prompt("Digite os ganhos do mês de agosto:"));
+let setembro= Number(prompt("Digite os ganhos do mês de setembro:"));
+let outubro= Number(prompt("Digite os ganhos do mês de outubro:"));
+let novembro= Number(prompt("Digite os ganhos do mês de novembro:"));
+let dezembro= Number(prompt("Digite os ganhos do mês de dezembro:"));
+    let primeirosemestre= (janeiro) + (fevereiro) + (marco) + (abril) + (abril) + (maio) + (junho);
+    let segundosemestre= (julho) + (agosto) + (agosto) + (setembro) + (outubro) + (novembro) + (dezembro);
+    let total = (primeirosemestre) + (segundosemestre);
+
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("primeirosemestre").innerHTML=primeirosemestre;
+    document.getElementById("segundosemestre").innerHTML=segundosemestre;
+    document.getElementById("total").innerHTML=total;
+
+  
+    
+    </script>
+   
+</body>
+</html>

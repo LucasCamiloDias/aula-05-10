@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript06 </title>
+</head>
+<body>
+
+ <h1>Fast food</h1>
+    <p>Nome do cliente: <span id=nome></span></p> 
+    <p>reais: <span id="dolar"></span></p>
+<p>total em dolar: <span id="total"></span></p>
+
+<script>
+
+
+    let nome= (prompt("digite seu nome"));
+let dolar= Number(prompt("Digite a quantidade de dolar:"));
+
+
+
+let total= Number(dolar / 5,32)
+
+
+
+
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("dolar").innerHTML=nome;
+    
+    document.getElementById("total").innerHTML=total;
+  
+    
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio JavaScript06 </title>
+</head>
+<body>
+
+ <h1>Fast food</h1>
+    <p>Nome do cliente: <span id=nome></span></p> 
+<p>total: <span id="total"></span></p>
+
+<script>
+    prompt ("Hot dog R$ 1,00 | Hambúrguer R$ 1,30 | Cheeseburguer R$ 1,50 | Refrigerante em lata R$ 1,00 | Batatas fritas R$ 0,80 ");
+
+
+    let nome= (prompt("digite seu nome"));
+let hotdog= Number(prompt("Digite a quantidade de hotdog:"));
+let hamburguer= Number(prompt("Digite a quantidade de hamburguer:"));
+let cheeseburguer= Number(prompt("Digite a quantidade de cheeseburguer:"));
+let refri= Number(prompt("Digite a quantidade de refri:"));
+let batata= Number(prompt("Digite a quantidade de batata:"));
+
+let total= Number((1 * hotdog) + (1,30 * hamburguer) + (1,5 * cheeseburguer) + (1 * refri) + (0,8 * batata));
+
+
+
+
+     
+    document.getElementById("nome").innerHTML=nome;
+    document.getElementById("banco").innerHTML=banco;
+    document.getElementById("conta").innerHTML=conta;
+
+    document.getElementById("total").innerHTML=total;
+  
+    
+    </script>
+   
+</body>
+</html>
